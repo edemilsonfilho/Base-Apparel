@@ -33,8 +33,9 @@ main {
 }
 
 #base-apparel {
-    height: 19.62px;
-    font-size: 16px;
+    height: 19.94px;
+    width: 99.74px;
+    font-size: 12px;
     padding-left: 6.96px;
     font-family: "Josefin Sans", serif;
     letter-spacing: 2px;
@@ -82,15 +83,44 @@ img {
 
 }
 
+form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 311px;
+}
+
 #email {
     width: 311px;
+    border: 1px solid #E5A6A6;
     border-radius: 28px;
     height: 48px;
-    margin: 0 32px 0 32px;
+    /* padding-left: 16px; */
+    margin-left: 32px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+#email::placeholder {
+    color: #d9a9a9;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 6px;
+    background: linear-gradient(135deg, #F8BFBF, #EE8B8B);
+    border: none;
     border-radius: 28px;
-    height: 48px;
     width: 64px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: linear-gradient(135deg, #F8BFBF, #EE8B8B);
 }
