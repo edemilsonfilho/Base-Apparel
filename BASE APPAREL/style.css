@@ -3,11 +3,13 @@
     margin: 0;
 }
 
-body {
-    background-color: #333
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main {
     display: flex;
@@ -83,28 +85,30 @@ img {
 
 }
 
+
 form {
     display: flex;
-    /* align-items: center; */
     position: relative;
-    /* width: 311px; */
+    padding-right: 24px;
 }
 
 #email {
     width: 311px;
-    border: 1px solid #E5A6A6;
-    border-radius: 28px;
-    height: 48px;
+    padding-left: 24px;
     margin-right: 31px;
     margin-left: 33px;
+    border: 2px solid #E5A6A6;
+    border-radius: 28px;
+    height: 48px;
     font-size: 16px;
     color: #333;
     background: transparent;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 #email::placeholder {
     color: #d9a9a9;
-    font-family: "Josefin Sans", sans-serif;
 }
 
 #button {
@@ -112,17 +116,47 @@ form {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 0;
+    right: 10px;
     margin-right: 31px;
     background: linear-gradient(135deg, #F8BFBF, #EE8B8B);
     border: none;
     border-radius: 28px;
     width: 64px;
-    height: 49px;
+    height: 52px;
     cursor: pointer;
+    transition: 0.3s;
+    color: white;
 }
 
 #button:hover {
-    border-color: #E5A6A6;
-    background: linear-gradient(135deg, #F8BFBF, #EE8B8B);
+    background: linear-gradient(135deg, #F5A5A5, #E97777);
+}
+
+.erro-mensagem {
+    display: none;
+    color: #f44;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.erro-de-icon {
+    display: none;
+    position: absolute;
+    right: 65px;
+    top: 14px;
+    width: 24px;
+    height: 24px;
+    margin-right: 42px;
+    background: #f44;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.erro input {
+    border: 2px solid #f44;
 }
